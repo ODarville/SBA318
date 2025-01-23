@@ -23,7 +23,7 @@ router.route('/:id').get((req, res) => {
 .post((req, res) => {
   if(req.body.name && req.body.username && req.body.password) {
     if(accounts.find(account => account.username === req.body.username)){
-        return res.status(400).send('Username already exists');
+        return res.send('Username already exists');
     }
     const account = {
         id : accounts.length + 1,
@@ -35,7 +35,7 @@ router.route('/:id').get((req, res) => {
     accounts.push(account);
     res.send('Account created successfully');
     }else{
-        res.status(400).send('Missing required fields');
+        res.send('Missing required fields');
     }
 
 });

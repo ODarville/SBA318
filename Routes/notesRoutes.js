@@ -32,7 +32,7 @@ router.post('/', (req, res) => {
             id: notes.length + 1,
             content: req.body.content,
             important: Boolean(req.body.important),
-            date: new Date()
+            // date: new Date()
         }
         notes.push(note);
         res.json(note);
