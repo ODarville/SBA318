@@ -1,0 +1,35 @@
+////////////////////////////
+//// Require Statement /////
+////////////////////////////
+
+const notes = require('./routes/noteRoutes');
+const accounts = require('./routes/accountRoutes');
+
+const express = require('express');
+const app = express();
+const port = 3000;
+
+////////////////////////////
+////// Middleware //////////
+////////////////////////////
+
+
+
+
+
+////////////////////////////
+///////// Routes ///////////
+////////////////////////////
+
+app.use("/api/accounts", accounts); 
+app.use();
+
+
+////////////////////////////
+////// Server Setup ////////
+////////////////////////////
+
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+})
