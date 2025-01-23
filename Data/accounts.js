@@ -30,4 +30,4 @@ const accounts = [{
     
 }]
 
-module.exports = accounts
+module.exports = accounts;

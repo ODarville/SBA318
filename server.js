@@ -9,6 +9,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+// const accountsRouter = require('./routes/accountRoutes');
+// const notesRouter = require('./routes/noteRoutes');
+
 ////////////////////////////
 ////// Middleware //////////
 ////////////////////////////
