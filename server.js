@@ -34,6 +34,16 @@ app.use((req, res, next) => {
     next();
   });
 
+  app.use((req, res, next) => {
+    console.log('random middleware just here to chat');
+    next();
+})
+
+function customMiddleware(req, res, next) {
+    console.log('different random middleware');
+    next();
+}
+
 
 ////////////////////////////
 ///////// Routes ///////////
